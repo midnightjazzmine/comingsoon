@@ -1,0 +1,41 @@
+
+
+h1, h2, #coming-soon{
+    color: $moonYellow;
+    opacity: .9;
+    // text-transform: uppercase;
+    // font-weight: 400;
+}
+
+h1, #coming-soon{
+    // animation: fadeAndScale 3s ease-in;
+    position: fixed;
+    font-family: 'cheltenham_condensedbold', serif;
+    font-size: 2.8em;
+    padding: 0 0 2em 0;
+    top: 30%;
+
+}
+
+h2 {
+    position: relative;
+    animation: fadeAndScale 7s ease-in;
+    animation-fill-mode: forwards;
+    padding: 3em 0 3em 0;
+    letter-spacing: .05em;
+}
+
+@keyframes fadeAndScale {
+    0% {
+        opacity: 0;
+        transform: scale3d(.5, .5, 1);
+    }
+    50% {
+        opacity: 0;
+        transform: scale3d(.5, .5, 1);
+    }
+    100% {
+        opacity: .9;
+        transform: scale3d(1, 1, 1);
+    }
+}

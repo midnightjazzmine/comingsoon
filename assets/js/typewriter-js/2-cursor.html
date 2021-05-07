@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Basic Javascript Typewriter Demo
+    </title>
+    
+    <!-- (A) FAKE BLINKING CURSOR -->
+    <style>
+    @keyframes blink {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    .cursor::after {
+      content: "|";
+      font-size: 1.5em;
+      font-weight: bold;
+      animation: blink infinite 0.7s;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- (B) CONTAINER -->
+    <div id="demoC" class="cursor"></div>
+
+    <!-- (C) GO! -->
+    <script src="1-typewriter.js"></script>
+    <script>
+    window.addEventListener("load", function(){
+      typewrite("demoC", "Wow. Much text. Very paragraph. Such contents.", true);
+    });
+    </script>
+  </body>
+</html>

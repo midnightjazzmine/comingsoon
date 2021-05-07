@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Basic Javascript Typewriter Demo
+    </title>
+
+    <!-- (A) TYPEWRITER JS -->
+    <script src="1-typewriter.js"></script>
+  </head>
+  <body>
+    <!-- (B) CONTAINERS -->
+    <div id="demoA"></div>
+    <p id="demoB"></p>
+
+    <!-- (C) GO! -->
+    <script>
+    window.addEventListener("load", function(){
+      typewrite("demoA", "Hello World! Foo Bar. Goodbye World!");
+      typewrite("demoB", "Wow. Much text. Very paragraph. Such contents.", true, 50);
+    });
+    </script>
+  </body>
+</html>
